@@ -26,3 +26,15 @@ myFunction();
 
 /* Create a function called `sumation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
 
+
+function sumation(num){
+ for(let i = 0; i <= num; i++){
+
+    let total = 1 + [i];
+    
+    return total
+ }
+
+}
+
+console.log(sumation(4))
