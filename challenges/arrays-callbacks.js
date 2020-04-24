@@ -63,11 +63,9 @@ The zoos need to know their total animal population across the United States. Fi
 FINISH AFTER LUNCH!!!
 */
 
-const populationTotal = 0;
-
-// zooAnimals.reduce(function(returntotal, currentvalue){
-   
-// }, 0)
+const populationTotal = zooAnimals.reduce(function(runningtotal, item){
+      return runningtotal + item.population
+ }, 0)
 
 console.log(populationTotal);
 
@@ -95,14 +93,18 @@ function add(a,b){
   return a + b;
 }
 
+function multiply(a,b){
+  return a * b;
+}
+
+function greeting(firstname,lastname){
+  return `Hello ${firstname, lastname}, nice to meet you!`;
+}
+
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
-// console.log(consume(2, 2, add)); // 4
-// console.log(consume(10, 16, multiply)); // 160
-// console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
-
-
-
-
+console.log(consume(2, 2, add)); // 4
+console.log(consume(10, 16, multiply)); // 160
+console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
 /*
 
 Stretch: If you haven't already, convert your array method callbacks into arrow functions.
